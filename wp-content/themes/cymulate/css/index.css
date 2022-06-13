@@ -797,4 +797,17 @@ section.third .dots > div:first-child {
     position: relative;
   }
 }
+
+.weather .location {
+  font-weight: bold;
+}
+
+.weather .forcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=index.css.map */

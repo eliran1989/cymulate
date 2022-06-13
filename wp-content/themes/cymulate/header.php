@@ -30,6 +30,12 @@
                     </div>
 
 
+                    <div class="weather">
+
+                        
+                    </div>
+
+
                     <div class="hamburger">
                             <div></div>
                             <div></div>

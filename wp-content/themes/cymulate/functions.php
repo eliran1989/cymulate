@@ -50,6 +50,7 @@ function add_custom_taxonomies() {
 
   function wpdocs_theme_name_scripts() {
     wp_enqueue_script( 'cymulate-script', get_template_directory_uri() . '/js/index.js', array( 'jquery' ), '1.0.0', false );
+    wp_enqueue_script( 'weather-script', get_template_directory_uri() . '/js/weather.js', array( 'jquery' ), '1.0.0', false );
     wp_enqueue_style( 'cymulate-style', get_template_directory_uri()."/css/index.css" );
 }
 

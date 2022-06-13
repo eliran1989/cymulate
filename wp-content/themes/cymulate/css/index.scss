@@ -687,3 +687,17 @@ section.second{
             }
 
         }
+
+
+
+        .weather{
+            .location{
+                font-weight: bold;
+            }
+
+            .forcast{
+                display: flex;
+                align-items: center;
+            
+            }
+        }
