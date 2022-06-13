@@ -24,6 +24,7 @@ function add_custom_taxonomies() {
 
     register_taxonomy('Prioritize', 'threats', array(
       'hierarchical' => false,
+      'show_admin_column' => true,
       'labels' => array(
         'name' => _x( 'Prioritize', 'taxonomy general name' ),
         'singular_name' => _x( 'Prioritize', 'taxonomy singular name' ),
@@ -38,16 +39,19 @@ function add_custom_taxonomies() {
         'new_item_name' => __( 'New Prioritize Name' ),
         'menu_name' => __( 'Prioritize' ),
       ),
-
-      'rewrite' => array(
-        'slug' => 'prioritize', 
-        'with_front' => false, 
-        'show_in_rest' => true,
-        'show_ui' => true
-      ),
+      'slug' => 'prioritize', 
+      'with_front' => false, 
+      'show_in_rest' => true,
+      'show_ui' => true
     ));
   }
   
-  
+
+  function wpdocs_theme_name_scripts() {
+    wp_enqueue_style( 'cymulate-style', get_template_directory_uri()."/css/index.css" );
+}
+
+  add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
   add_action( 'init', 'create_posttype' );
   add_action( 'init', 'add_custom_taxonomies', 0 );
+  add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
