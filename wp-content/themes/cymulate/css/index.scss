@@ -205,8 +205,13 @@ section.second{
     height: 669px;
     background-image: url('../assets/Desktop/Sec\ 01\ backround.png');
 
+
+
+
     @media screen and (max-width: 375px){
-        height: 1186px;
+        height: 1170px;
+        background-image: url('../assets//Mobile/Sec\ 01\ backround\ mobile.png');
+        border-radius: 0 10px 0 10px;
     }
 
     >div{
@@ -254,6 +259,7 @@ section.second{
                 height: 303px;
                 @media screen and (max-width: 375px){
                   margin-bottom: 40px;
+                  height: 375px;
                 }
             }
 
@@ -269,6 +275,8 @@ section.second{
                 
                 @media screen and (max-width: 375px){
                     width: 100%!important;
+                    line-height: 24px;
+                    
                 }
             }
 
@@ -292,6 +300,10 @@ section.second{
                 line-height: 63px;
                 letter-spacing: 0.05em;
                 margin-right: 20px;
+
+                @media screen and (max-width: 375px){
+                    margin-right: 26px;
+                }
             }
         }
         >form{
@@ -404,16 +416,63 @@ section.second{
             background: #070723;
             padding-top: 43px;
             padding-bottom: 70px;
+
+
+            .toggleMobile{
+                display: none;    
+             }
+
+
+            @media screen and (max-width: 375px){
+               overflow: hidden;
+               padding-top: 113px;
+               position: relative;
+               z-index: 99;
+               top: -71px;
+
+               .toggleMobile{
+                    display: flex;
+                    padding: 0 29px;
+                    box-sizing: border-box;
+                    justify-content: space-between;
+               
+           
+                    .button{
+                        background-color: #45455A;
+                        width: 70px;
+                        font-size: 14px;
+                        pointer-events: all;
+                        z-index: 999999;
+                    }
+
+                    .button.active{
+                        background-color: #0E54C4;
+                    }
+
+
+               }
+
+ 
+
+
+            }
             >div{
                 width: 1200px;
                 margin: 0 auto;
                 color: #fff;
-                
+                @media screen and (max-width: 375px){
+                    width: 100%;
+                }
                 
                 
                 .toggle{
                         display: flex;
                         justify-content: flex-end;
+
+                        @media screen and (max-width: 375px){
+                           display: none;
+                        }
+                        
                         >div{
                             width: 309px;
 
@@ -484,11 +543,22 @@ section.second{
                 padding-top: 55px;
                 width: 1103px;
                 margin: 0 auto;
+        
+
+                @media screen and (max-width: 375px){
+                    width: 866px;
+                }
+
 
 
                 .boxes-wrap{
                     position: relative;
                     margin-bottom: 57px;
+
+                    @media screen and (max-width: 375px){
+                        left: -28%;
+                        margin-bottom: 40px;
+                    }
 
                     .arrow{
                         width: 18px;
@@ -498,6 +568,10 @@ section.second{
                         background-repeat: no-repeat;
                         top:153.5px;
                         cursor: pointer;
+
+                        @media screen and (max-width: 375px){
+                           display: none;
+                        }
                 
                     }
 
@@ -575,11 +649,22 @@ section.second{
                 justify-content: space-between;
                 cursor: pointer;
 
+
+                @media screen and (max-width: 375px){
+                    width: 46px;
+                }
+
                 >div{
                     width: 12px;
                     height: 12px;
                     border-radius: 50%;
                     background-color: #45455A;
+
+
+                    @media screen and (max-width: 375px){
+                        width: 8px;
+                        height: 8px;
+                    }
 
                     &:first-child{
                         background-color: #ffff;
@@ -589,3 +674,16 @@ section.second{
         }
 
 
+        .mobileCircle{
+            display: none;
+
+            @media screen and (max-width: 375px){
+                background-image: url("../assets//Mobile/Ellipse\ 232.png");
+                display: block;
+                height: 71px;
+                width: 100%;
+                z-index: 9999;
+                position: relative;
+            }
+
+        }

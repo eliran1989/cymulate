@@ -84,6 +84,12 @@ $secondSectionData = get_field("section_2");
                     
                     </div>
 
+                  
+
+                    </div>
+
+                    <div class='mobileCircle'></div>
+
             </section>
 
 
@@ -117,6 +123,11 @@ $secondSectionData = get_field("section_2");
                                     </label>
                                     <span>Low Risk</span>
                                 </div>
+                            </div>
+
+                            <div class='toggleMobile'>
+                                <a href="" class="button active">Immediate</a>
+                                <a href="" class="button">Low Risk</a>
                             </div>
 
 

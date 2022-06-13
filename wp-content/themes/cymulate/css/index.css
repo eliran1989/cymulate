@@ -255,7 +255,9 @@ section.second {
 
 @media screen and (max-width: 375px) {
   section.second {
-    height: 1186px;
+    height: 1170px;
+    background-image: url("../assets//Mobile/Sec 01 backround mobile.png");
+    border-radius: 0 10px 0 10px;
   }
 }
 
@@ -329,6 +331,7 @@ section.second > div > div ul {
 @media screen and (max-width: 375px) {
   section.second > div > div ul {
     margin-bottom: 40px;
+    height: 375px;
   }
 }
 
@@ -349,6 +352,7 @@ section.second > div > div li {
 @media screen and (max-width: 375px) {
   section.second > div > div li {
     width: 100% !important;
+    line-height: 24px;
   }
 }
 
@@ -374,6 +378,12 @@ section.second > div > div li::before {
   line-height: 63px;
   letter-spacing: 0.05em;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  section.second > div > div li::before {
+    margin-right: 26px;
+  }
 }
 
 section.second > div > form {
@@ -497,10 +507,51 @@ section.third {
   padding-bottom: 70px;
 }
 
+section.third .toggleMobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  section.third {
+    overflow: hidden;
+    padding-top: 113px;
+    position: relative;
+    z-index: 99;
+    top: -71px;
+  }
+  section.third .toggleMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 29px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.third .toggleMobile .button {
+    background-color: #45455A;
+    width: 70px;
+    font-size: 14px;
+    pointer-events: all;
+    z-index: 999999;
+  }
+  section.third .toggleMobile .button.active {
+    background-color: #0E54C4;
+  }
+}
+
 section.third > div {
   width: 1200px;
   margin: 0 auto;
   color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  section.third > div {
+    width: 100%;
+  }
 }
 
 section.third > div .toggle {
@@ -510,6 +561,12 @@ section.third > div .toggle {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media screen and (max-width: 375px) {
+  section.third > div .toggle {
+    display: none;
+  }
 }
 
 section.third > div .toggle > div {
@@ -576,9 +633,22 @@ section.third .items {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 375px) {
+  section.third .items {
+    width: 866px;
+  }
+}
+
 section.third .items .boxes-wrap {
   position: relative;
   margin-bottom: 57px;
+}
+
+@media screen and (max-width: 375px) {
+  section.third .items .boxes-wrap {
+    left: -28%;
+    margin-bottom: 40px;
+  }
 }
 
 section.third .items .boxes-wrap .arrow {
@@ -589,6 +659,12 @@ section.third .items .boxes-wrap .arrow {
   background-repeat: no-repeat;
   top: 153.5px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  section.third .items .boxes-wrap .arrow {
+    display: none;
+  }
 }
 
 section.third .items .boxes-wrap .arrow.right {
@@ -683,6 +759,12 @@ section.third .dots {
   cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+  section.third .dots {
+    width: 46px;
+  }
+}
+
 section.third .dots > div {
   width: 12px;
   height: 12px;
@@ -690,7 +772,29 @@ section.third .dots > div {
   background-color: #45455A;
 }
 
+@media screen and (max-width: 375px) {
+  section.third .dots > div {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 section.third .dots > div:first-child {
   background-color: #ffff;
+}
+
+.mobileCircle {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .mobileCircle {
+    background-image: url("../assets//Mobile/Ellipse 232.png");
+    display: block;
+    height: 71px;
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -12,6 +12,7 @@ function create_posttype() {
        'add_new_item' => __( 'Add New Threat' )
       ),
       'public' => true,
+      'show_in_rest' => true,
       'has_archive' => false,
       'rewrite' => array('slug' => 'Threats'),
       'menu_icon' => 'dashicons-warning',
@@ -48,6 +49,7 @@ function add_custom_taxonomies() {
   
 
   function wpdocs_theme_name_scripts() {
+    wp_enqueue_script( 'cymulate-script', get_template_directory_uri() . '/js/index.js', array( 'jquery' ), '1.0.0', false );
     wp_enqueue_style( 'cymulate-style', get_template_directory_uri()."/css/index.css" );
 }
 
@@ -55,3 +57,5 @@ function add_custom_taxonomies() {
   add_action( 'init', 'create_posttype' );
   add_action( 'init', 'add_custom_taxonomies', 0 );
   add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+
+  
