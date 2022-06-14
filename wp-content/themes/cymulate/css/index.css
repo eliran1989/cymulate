@@ -517,7 +517,7 @@ section.third .toggleMobile {
     padding-top: 113px;
     position: relative;
     z-index: 99;
-    top: -71px;
+    margin-top: -71px;
   }
   section.third .toggleMobile {
     display: -webkit-box;
@@ -809,5 +809,17 @@ section.third .dots > div:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weather .forcast img {
+  height: 25px;
+  width: auto;
+}
+
+.weather .forcast sup {
+  font-size: 10px;
 }
 /*# sourceMappingURL=index.css.map */

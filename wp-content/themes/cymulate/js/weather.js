@@ -2,7 +2,7 @@
     $(document).ready(function(){
 
 
-        const apiKey = "uAqBwxQstHKulyqF1PPGua4wUJt6HOSv"
+        const apiKey = "L08OULN1I5g9AG4KyC2yeDadcLgKyxJ0"
 
 if(navigator.geolocation){
   
@@ -35,7 +35,7 @@ if(navigator.geolocation){
 
       $(".weather").html(`
         <div class='forcast'>
-            <div>${Math.floor(response[0].Temperature.Metric.Value)}<small>C</small></div>
+            <div>${Math.floor(response[0].Temperature.Metric.Value)} <sup>C</sup></div>
             <img src='https://developer.accuweather.com/sites/default/files/${(response[0].WeatherIcon<10) ?`0${response[0].WeatherIcon}` : response[0].WeatherIcon}-s.png'/>
         </div>
         <div class='location'>${locationName}</div>
