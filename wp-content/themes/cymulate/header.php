@@ -8,8 +8,16 @@
 
             wp_head();
 
+            global $post;
+
             ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://cymulate.com/wp-content/uploads/2021/09/cymulate-logo-icon.png" sizes="32x32" />
+        <link rel="icon" href="https://cymulate.com/wp-content/uploads/2021/09/cymulate-logo-icon.png" sizes="192x192" />
+
+       
+        <title><?php echo $post->post_title; ?></title>
+
         </head>
 
         <body>
