@@ -21,11 +21,7 @@ if(navigator.geolocation){
 
 
     });
-  }else{
-
-
   }
-
 
 
 
